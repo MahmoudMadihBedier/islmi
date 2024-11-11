@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:islmi/fragments/Quran_fragment/sura_details.dart';
 import 'package:islmi/home.dart';
 
 void main() {
@@ -17,11 +18,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
-      
+    
+    
        
       ),
       routes:{
-        Home.routeName:(context)=>Home()
+        Home.routeName:(context)=>Home(),
+        SuraDetails.routeName:(context)=>SuraDetails(),
       } ,
       initialRoute:Home.routeName ,
     );
