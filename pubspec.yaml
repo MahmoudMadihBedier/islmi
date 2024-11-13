@@ -11,8 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
   cupertino_icons: ^1.0.8
   flutter_native_splash: ^2.4.2
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
@@ -20,12 +24,15 @@ dev_dependencies:
   flutter_lints: ^4.0.0
 
 flutter:
+  generate: true 
   uses-material-design: true
+   
 
   assets:
     - assets/images/ # Add images here
     - assets/icon/
     - assets/files/
+    - assets/hadeth/
 
 # Uncomment below to add custom fonts
 # fonts:

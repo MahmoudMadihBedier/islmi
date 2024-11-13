@@ -38,7 +38,7 @@ class AhadethFragment extends StatelessWidget {
               },
               itemCount: ahadethList.length,
               itemBuilder: (context, index) {
-                return HadethName(ahadethList[index]);
+                return HadethName(ahadethList[index],index);
               },
             ),
           )
